@@ -1,1 +1,32 @@
-45454
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Guvi001/newrepo.git
+git push -u origin main
+
+// add or set origins
+
+git remote add origin https://github.com/Guvi001/newrepo.git
+git branch -M main
+git push -u origin main
+
+// test
+
+git remote -v
+
+// first time
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+
+// test
+
+git config -list
+
+// aditional Worth to know (SSH keys create)
+
+ssh-keygen -t rsa -b 4096 -C "yourname@example.com"
+ls -al ~/.ssh
+cat ~/.ssh/id_rsa.pub
